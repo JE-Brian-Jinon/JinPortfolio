@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JEPortfolio</title>
+
+	<link rel="stylesheet" type="text/css" href="index.css" />
+
+
+	<!-- for the icons-->
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+	<!-- for the swiperjs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+	
+</head>
+<body>
+	<canvas id="particle-canvas"></canvas>
+	<header class="header">
+		<a href="#home" class="logo">JE Brian <span>Jinon</span></a>
+		<i class="bx bx-menu" id="menu-icon"></i>
+		<nav class="navbar">
+			<a href="#home">Home</a>
+			<a href="#about">About</a>
+			<a href="#experience">Experience</a>
+			<a href="#contact">Contact</a>
+			<a href="#" id="resumeLink">Resume</a>
+		</nav>
+	</header>
+
+	<section class="home" id="home">
+		<div class="home-content">
+			<h1>YO YO YO</h1>
+			<h3>I am <span>JE Brian Jinon</span></h3>
+			<p>I am a Cum Laude graduate in Information Technology with a good understanding of programming and web development. I have gained valuable experience creating programs and websites both independently and collaboratively with a team during my time in college. Additionally, I am eager to acquire new skills and further enhance my knowledge and abilities.</p>
+
+			<div class="social-icons">
+				<a href="https://www.facebook.com/brian.jinon">
+					<i class="bx bxl-facebook"></i>
+				</a>
+				<a href="#">
+					<i class="bx bx-envelope"></i>
+				</a>
+				<a href="#">
+					<i class="bx bx-camera"></i>
+				</a>
+			</div>
+			<div class="btn-group">
+				<a href="#experience" class="btn">Experience</a>
+				<a href="#contact" class="btn">Contact</a>
+			</div>
+		</div>
+
+		<div class="home-img">
+			<img src="images/mainPic.jpg">
+		</div>
+	</section>
+
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="images/secondPic.jpg">
+		</div>
+		<div class="about-content">
+			<h2>About <span>Me</span></h2>
+			<p>I am a passionate and aspiring IT professional with hands-on experience in technical support, system troubleshooting, and web development. During my On-the-Job Training at the Information Communication Technology Management Office – Province of Iloilo, I assisted in resolving network and hardware issues, configuring systems, and managing databases using Microsoft SQL Server. I enjoy building practical and user-focused projects, including developing a pet adoption website with an integrated information management system and creating my own version of a battleship game with unique mechanics. I am continuously improving my skills in HTML, CSS, JavaScript, SQL, and backend development while seeking opportunities to grow professionally. I work well under pressure, value teamwork and reliability, and aim to contribute efficient and innovative solutions to real-world challenges.</p>
+
+			<a href="#" class="btn">Read More</a>
+		</div>
+	</section>
+
+	<section class="experience" id="experience">
+		<div class="card-slider swiper">
+			<h2><span>My </span>Experience</h2>
+			<div class="slider-wrapper">
+				<div class="card-list swiper-wrapper">
+					<div class="card-item swiper-slide">
+						<img src="images/ojt.jpg" class="card-image">
+						<div class="card-details">
+							<h3 class="card-title">On the Job Training</h3>
+							<p class="card-description">Completed On-the-Job training at Information Communication Technology Management Office - Province of Iloilo. Assisted in troubleshooting internet connectivity and hardware issues such as printer and routers. Assisted in setting up routers and computers. Installed and configured Windows operating systems. Learned database schema creation, including tables and relationship. Experience using Microsoft SQL Server (MSSQL).</p>
+						</div>						
+					</div>					
+					<div class="card-item swiper-slide">
+						<img src="images/battleship.jpg" class="card-image">
+						<div class="card-details">
+							<h3 class="card-title">Battleship</h3>
+							<p class="card-description">Created my own take on the battleship game. I aimed to make the game more asymmetrical by providing different factions with unique boats and special attacks. <a href="" style="font-size: 18px;">Click Here to play</a></p>
+							
+						</div>						
+					</div>
+					<div class="card-item swiper-slide">
+						<img src="images/project3.jpg" class="card-image">
+						<div class="card-details">
+							<h3 class="card-title">Pet Adoption Website</h3>
+							<p class="card-description">Developed a pet adoption website with an information management system using HTML, CSS, SQL, JavaSript, Bootstrap, and PHP.</p>
+						</div>
+					</div>
+					<div class="card-item swiper-slide">
+						<img src="images/techsupport.jpg" class="card-image">
+						<div class="card-details">
+							<h3 class="card-title">Tech Support</h3>
+							<p class="card-description">Provided technical support and assistance throughout the canvassing period on 2025 Election day. Specifically in the operation and troubleshooting of the CCS laptop. Resolved system initialization errors, network connectivity issues, and transmission failures under time-sensitive conditions.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+			<div class="slider-button swiper-button-prev"></div>
+			<div class="slider-button swiper-button-next"></div>
+		</div>
+	</section>
+
+
+	<section class="contact" id="contact">
+		<h2>Contact <span>Me</span></h2>
+
+		<div class="contact-container">
+			<div class="contact-item">
+				<i class="bx bx-location-plus"></i>
+				<h3>Address</h3>
+				<p>Iloilo, Philippines</p>		
+			</div>
+
+			<div class="contact-item">
+				<i class="bx bx-phone"></i>
+				<h3>Phone</h3>
+				<p>09163372264</p>
+			</div>
+
+			<div class="contact-item">
+				<i class="bx bx-envelope"></i>
+				<h3>Email</h3>
+				
+				<p>jebjinon@gmail.com</p>
+			</div>
+		</div>
+	</section>
+
+
+	<div id="resumeModal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<a href="Brian_Jinon_CV.pdf" download><p>Click this to <span>Download</span> Resume.</p></a>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="social-icons">
+				<a href="https://www.facebook.com/brian.jinon">
+					<i class="bx bxl-facebook"></i>
+				</a>
+				<a href="#">
+					<i class="bx bx-envelope"></i>
+				</a>
+				<a href="#">
+					<i class="bx bx-camera"></i>
+				</a>
+		</div>
+		<ul class="footerlist">
+			<li>
+				<a href="#home">Home</a>
+			</li>	
+			<li>	
+				<a href="#about">About</a>
+			</li>	
+			<li>	
+				<a href="#experience">Experience</a>
+			</li>	
+			<li>	
+				<a href="#contact">Contact</a>
+			</li>
+		</ul>
+		<p>All Rights Reserved &copy;2026</p>
+	</footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
+
+</html>
